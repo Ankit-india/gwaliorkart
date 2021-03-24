@@ -1,0 +1,183 @@
+[
+  {
+    "userJson": [
+      {
+        "id": "1",
+        "name": "Akhilesh Karn",
+        "age": "25",
+        "height": "172",
+        "gender": "Male",
+        "hair_color": "black",
+        "image": "assets/01.jpg"
+      },
+      {
+        "id": "2",
+        "name": "Sarika Pant",
+        "age": "22",
+        "height": "171",
+        "gender": "Female",
+        "hair_color": "red",
+        "image": "assets/02.jpg"
+      },
+      {
+        "id": "3",
+        "name": "Sheetel Yadav",
+        "age": "21",
+        "height": "170",
+        "gender": "Female",
+        "hair_color": "black",
+        "image": "assets/03.jpg"
+      },
+      {
+        "id": "4",
+        "name": "Raman Karn",
+        "age": "24",
+        "height": "165",
+        "gender": "Male",
+        "hair_color": "black",
+        "image": "assets/04.jpg"
+      },
+      {
+        "id": "5",
+        "name": "Abhishek Karn",
+        "age": "26",
+        "height": "164",
+        "gender": "Male",
+        "hair_color": "black",
+        "image": "assets/05.jpg"
+      },
+      {
+        "id": "6",
+        "name": "Uday Raj",
+        "age": "29",
+        "height": "167",
+        "gender": "Male",
+        "hair_color": "black",
+        "image": "assets/06.jpg"
+      },
+      {
+        "id": "7",
+        "name": "Hitesh Rathod",
+        "age": "27",
+        "height": "178",
+        "gender": "Male",
+        "hair_color": "black",
+        "image": "assets/07.jpg"
+      },
+      {
+        "id": "8",
+        "name": "Trisha Gaur",
+        "age": "28",
+        "height": "132",
+        "gender": "Female",
+        "hair_color": "black",
+        "image": "assets/08.jpg"
+      },
+      {
+        "id": "9",
+        "name": "Akhil Karn",
+        "age": "20",
+        "height": "179",
+        "gender": "Male",
+        "hair_color": "black",
+        "image": "assets/09.jpg"
+      },
+      {
+        "id": "10",
+        "name": "Anjali Karn",
+        "age": "31",
+        "height": "165",
+        "gender": "Female",
+        "hair_color": "red",
+        "image": "assets/10.jpg"
+      }
+    ]
+  },
+  {
+    "categoryJson": [
+      {
+        "id": "1",
+        "image": "assets/icons/category.png",
+        "name": "Fruits & Vegetables"
+      },
+      {
+        "id": "2",
+        "image": "assets/icons/category.png",
+        "name": "Foodgrains, Oil & Masala"
+      },
+      {
+        "id": "3",
+        "image": "assets/icons/category.png",
+        "name": "Bakery, Cakes & Dairy"
+      },
+      {
+        "id": "4",
+        "image": "assets/icons/category.png",
+        "name": "Beverages"
+      },
+      {
+        "id": "5",
+        "image": "assets/icons/category.png",
+        "name": "Snacks & Branded Foods"
+      },
+      {
+        "id": "6",
+        "image": "assets/icons/category.png",
+        "name": "Beauty & Hygiene"
+      },
+      {
+        "id": "7",
+        "image": "assets/icons/category.png",
+        "name": "Cleaning & Household"
+      },
+      {
+        "id": "8",
+        "image": "assets/icons/category.png",
+        "name": "Kitchen, Garden & Pets"
+      },
+      {
+        "id": "9",
+        "image": "assets/icons/category.png",
+        "name": "Eggs, Meat & Fish"
+      },
+      {
+        "id": "10",
+        "image": "assets/icons/category.png",
+        "name": "Gourmet & World Food"
+      },
+      {
+        "id": "11",
+        "image": "assets/icons/category.png",
+        "name": "Baby Care"
+      }
+    ]
+  },
+  {
+    "carouselJson": [
+      {
+        "id": 1,
+        "image": "https://images.ofypets.com/byfvW3RGB26hJpoiwVpoouSV"
+      },
+      {
+        "id": 2,
+        "image": "https://images.ofypets.com/XUyeZr6RbpGAcyj4DMaC5auD"
+      },
+      {
+        "id": 3,
+        "image": "https://images.ofypets.com/zQm2fN1Zkapq7ayHbqxeKpNC"
+      },
+      {
+        "id": 4,
+        "image": "https://images.ofypets.com/4JfjguHadzvi4VTec4pgQRxX"
+      },
+      {
+        "id": 5,
+        "image": "https://images.ofypets.com/WYnyhzRHu5Low3wGLwMUoJ6j"
+      },
+      {
+        "id": 6,
+        "image": "https://images.ofypets.com/3VaVCAZ566kfLpUNuvcUvYs6"
+      }
+    ]
+  }
+]

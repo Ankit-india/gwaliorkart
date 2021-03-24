@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "keyword": "rice"
+  },
+  {
+    "id": 2,
+    "keyword": "bread"
+  },
+  {
+    "id": 3,
+    "keyword": "biscuits"
+  },
+  {
+    "id": 4,
+    "keyword": "cheese"
+  },
+  {
+    "id": 5,
+    "keyword": "vegetables"
+  },
+  {
+    "id": 6,
+    "keyword": "mango"
+  },
+  {
+    "id": 7,
+    "keyword": "tea"
+  },
+  {
+    "id": 8,
+    "keyword": "namkeen"
+  },
+  {
+    "id": 9,
+    "keyword": "egg"
+  },
+  {
+    "id": 10,
+    "keyword": "mop"
+  }
+]

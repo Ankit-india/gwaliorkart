@@ -1,0 +1,584 @@
+[
+  {
+    "id": "1",
+    "image": "https://img.techpowerup.org/200616/fruits-vegetables.png",
+    "category_name": "Fruits & Vegetables",
+    "subcategory": [
+      {
+        "id": "1",
+        "subcategory_name": "All Fruits & Vegetables",
+        "link": "param_link"
+      },
+      {
+        "id": "2",
+        "subcategory_name": "Fresh Vegetables",
+        "link": "param_link"
+      },
+      {
+        "id": "3",
+        "subcategory_name": "Herbs & Seasonings",
+        "link": "param_link"
+      },
+      {
+        "id": "4",
+        "subcategory_name": "Exotic Fruits & Veggies",
+        "link": "param_link"
+      },
+      {
+        "id": "5",
+        "subcategory_name": "Fresh Fruits",
+        "link": "param_link"
+      },
+      {
+        "id": "6",
+        "subcategory_name": "Organic Fruits & Vegetables",
+        "link": "param_link"
+      },
+      {
+        "id": "7",
+        "subcategory_name": "Cuts & Sprouts",
+        "link": "param_link"
+      },
+      {
+        "id": "8",
+        "subcategory_name": "Flower Bouquets, Bunches",
+        "link": "param_link"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "image": "https://img.techpowerup.org/200616/foodgrains.png",
+    "category_name": "Foodgrains, Oil & Masala",
+    "subcategory": [
+      {
+        "id": "1",
+        "subcategory_name": "All Foodgrains, Oil & Masala",
+        "link": "param_link"
+      },
+      {
+        "id": "2",
+        "subcategory_name": "Dals & Pulses",
+        "link": "param_link"
+      },
+      {
+        "id": "3",
+        "subcategory_name": "Atta, Flours & Sooji",
+        "link": "param_link"
+      },
+      {
+        "id": "4",
+        "subcategory_name": "Salt, Sugar & Jaggery",
+        "link": "param_link"
+      },
+      {
+        "id": "5",
+        "subcategory_name": "Edible Oils & Ghee",
+        "link": "param_link"
+      },
+      {
+        "id": "6",
+        "subcategory_name": "Rice & Rice Products",
+        "link": "param_link"
+      },
+      {
+        "id": "7",
+        "subcategory_name": "Organic Staples",
+        "link": "param_link"
+      },
+      {
+        "id": "8",
+        "subcategory_name": "Masalas & Spices",
+        "link": "param_link"
+      },
+      {
+        "id": "9",
+        "subcategory_name": "Dry Fruits",
+        "link": "param_link"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "image": "https://img.techpowerup.org/200616/bakery.png",
+    "category_name": "Bakery, Cakes & Dairy",
+    "subcategory": [
+      {
+        "id": "1",
+        "subcategory_name": "All Bakery, Cakes & Dairy",
+        "link": "param_link"
+      },
+      {
+        "id": "2",
+        "subcategory_name": "Dairy",
+        "link": "param_link"
+      },
+      {
+        "id": "3",
+        "subcategory_name": "Breads & Buns",
+        "link": "param_link"
+      },
+      {
+        "id": "4",
+        "subcategory_name": "Gourmet Breads",
+        "link": "param_link"
+      },
+      {
+        "id": "5",
+        "subcategory_name": "Cookies, Rusk & Khari",
+        "link": "param_link"
+      },
+      {
+        "id": "6",
+        "subcategory_name": "Bakery Snacks",
+        "link": "param_link"
+      },
+      {
+        "id": "7",
+        "subcategory_name": "Ice Creams & Desserts",
+        "link": "param_link"
+      },
+      {
+        "id": "8",
+        "subcategory_name": "Cakes & Pastries",
+        "link": "param_link"
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "image": "https://img.techpowerup.org/200617/beverage.png",
+    "category_name": "Beverages",
+    "subcategory": [
+      {
+        "id": "1",
+        "subcategory_name": "All Beverages",
+        "link": "param_link"
+      },
+      {
+        "id": "2",
+        "subcategory_name": "Water",
+        "link": "param_link"
+      },
+      {
+        "id": "3",
+        "subcategory_name": "Energy & Soft Drinks",
+        "link": "param_link"
+      },
+      {
+        "id": "4",
+        "subcategory_name": "Tea",
+        "link": "param_link"
+      },
+      {
+        "id": "5",
+        "subcategory_name": "Health Drink, Supplement",
+        "link": "param_link"
+      },
+      {
+        "id": "6",
+        "subcategory_name": "Coffee",
+        "link": "param_link"
+      },
+      {
+        "id": "7",
+        "subcategory_name": "Fruit Juices & Drinks",
+        "link": "param_link"
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "image": "https://img.techpowerup.org/200617/snacks-and-foods.png",
+    "category_name": "Snacks & Branded Foods",
+    "subcategory": [
+      {
+        "id": "1",
+        "subcategory_name": "All Snacks & Branded Foods",
+        "link": "param_link"
+      },
+      {
+        "id": "2",
+        "subcategory_name": "Noodle, Pasta, Vermicelli",
+        "link": "param_link"
+      },
+      {
+        "id": "3",
+        "subcategory_name": "Breakfast Cereals",
+        "link": "param_link"
+      },
+      {
+        "id": "4",
+        "subcategory_name": "Frozen Veggies & Snacks",
+        "link": "param_link"
+      },
+      {
+        "id": "5",
+        "subcategory_name": "Spreads, Sauces, Ketchup",
+        "link": "param_link"
+      },
+      {
+        "id": "6",
+        "subcategory_name": "Biscuits & Cookies",
+        "link": "param_link"
+      },
+      {
+        "id": "7",
+        "subcategory_name": "Snacks & Namkeen",
+        "link": "param_link"
+      },
+      {
+        "id": "8",
+        "subcategory_name": "Ready to Cook & Eat",
+        "link": "param_link"
+      },
+      {
+        "id": "9",
+        "subcategory_name": "Chocolates & Candies",
+        "link": "param_link"
+      },
+      {
+        "id": "10",
+        "subcategory_name": "Pickles & Chutney",
+        "link": "param_link"
+      },
+      {
+        "id": "11",
+        "subcategory_name": "Indian Mithai",
+        "link": "param_link"
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "image": "https://img.techpowerup.org/200617/beauty-and-hygine.png",
+    "category_name": "Beauty & Hygiene",
+    "subcategory": [
+      {
+        "id": "1",
+        "subcategory_name": "All Beauty & Hygiene",
+        "link": "param_link"
+      },
+      {
+        "id": "2",
+        "subcategory_name": "Oral Care",
+        "link": "param_link"
+      },
+      {
+        "id": "3",
+        "subcategory_name": "Faminine Hygiene",
+        "link": "param_link"
+      },
+      {
+        "id": "4",
+        "subcategory_name": "Bath & Hand Wash",
+        "link": "param_link"
+      },
+      {
+        "id": "5",
+        "subcategory_name": "Men's Grooming",
+        "link": "param_link"
+      },
+      {
+        "id": "6",
+        "subcategory_name": "Hair Care",
+        "link": "param_link"
+      },
+      {
+        "id": "7",
+        "subcategory_name": "Health & Medicine",
+        "link": "param_link"
+      },
+      {
+        "id": "8",
+        "subcategory_name": "Skin Care",
+        "link": "param_link"
+      },
+      {
+        "id": "9",
+        "subcategory_name": "Makeup",
+        "link": "param_link"
+      },
+      {
+        "id": "10",
+        "subcategory_name": "Fragrances & Deos",
+        "link": "param_link"
+      }
+    ]
+  },
+  {
+    "id": "7",
+    "image": "https://img.techpowerup.org/200616/cleaning-household.png",
+    "category_name": "Cleaning & Household",
+    "subcategory": [
+      {
+        "id": "1",
+        "subcategory_name": "All Cleaning & Household",
+        "link": "param_link"
+      },
+      {
+        "id": "2",
+        "subcategory_name": "Detergents & Dishwash",
+        "link": "param_link"
+      },
+      {
+        "id": "3",
+        "subcategory_name": "All Purpose Cleaners",
+        "link": "param_link"
+      },
+      {
+        "id": "4",
+        "subcategory_name": "Disposables, Garbage Bag",
+        "link": "param_link"
+      },
+      {
+        "id": "5",
+        "subcategory_name": "Mops, Brushes & Scrubs",
+        "link": "param_link"
+      },
+      {
+        "id": "6",
+        "subcategory_name": "Fresheners & Repellents",
+        "link": "param_link"
+      },
+      {
+        "id": "7",
+        "subcategory_name": "Bins & Bathroom Ware",
+        "link": "param_link"
+      },
+      {
+        "id": "8",
+        "subcategory_name": "Pooja Needs",
+        "link": "param_link"
+      },
+      {
+        "id": "9",
+        "subcategory_name": "Car & Shoe Care",
+        "link": "param_link"
+      },
+      {
+        "id": "10",
+        "subcategory_name": "Party & Festive Needs",
+        "link": "param_link"
+      },
+      {
+        "id": "11",
+        "subcategory_name": "Stationary",
+        "link": "param_link"
+      }
+    ]
+  },
+  {
+    "id": "8",
+    "image": "https://img.techpowerup.org/200617/kitchen-and-garden.png",
+    "category_name": "Kitchen, Garden & Pets",
+    "subcategory": [
+      {
+        "id": "1",
+        "subcategory_name": "All Kitchen, Garden & Pets",
+        "link": "param_link"
+      },
+      {
+        "id": "2",
+        "subcategory_name": "Pet Food & Accessories",
+        "link": "param_link"
+      },
+      {
+        "id": "3",
+        "subcategory_name": "Appliances & Electricals",
+        "link": "param_link"
+      },
+      {
+        "id": "4",
+        "subcategory_name": "Kitchen Accessories",
+        "link": "param_link"
+      },
+      {
+        "id": "5",
+        "subcategory_name": "Cookware & Non Stick",
+        "link": "param_link"
+      },
+      {
+        "id": "6",
+        "subcategory_name": "Storage & Accessories",
+        "link": "param_link"
+      },
+      {
+        "id": "7",
+        "subcategory_name": "Steel Utensils",
+        "link": "param_link"
+      },
+      {
+        "id": "8",
+        "subcategory_name": "Bakeware",
+        "link": "param_link"
+      },
+      {
+        "id": "9",
+        "subcategory_name": "Flask & Casserole",
+        "link": "param_link"
+      },
+      {
+        "id": "10",
+        "subcategory_name": "Crockery & Cutlery",
+        "link": "param_link"
+      },
+      {
+        "id": "11",
+        "subcategory_name": "Gardening",
+        "link": "param_link"
+      }
+    ]
+  },
+  {
+    "id": "9",
+    "image": "https://img.techpowerup.org/200616/eggs-meat.png",
+    "category_name": "Eggs, Meat & Fish",
+    "subcategory": [
+      {
+        "id": "1",
+        "subcategory_name": "All Eggs, Meat & Fish",
+        "link": "param_link"
+      },
+      {
+        "id": "2",
+        "subcategory_name": "Eggs",
+        "link": "param_link"
+      },
+      {
+        "id": "3",
+        "subcategory_name": "Poultry",
+        "link": "param_link"
+      },
+      {
+        "id": "4",
+        "subcategory_name": "Fish & Seafood",
+        "link": "param_link"
+      },
+      {
+        "id": "5",
+        "subcategory_name": "Sausages, Bacon & Salami",
+        "link": "param_link"
+      },
+      {
+        "id": "6",
+        "subcategory_name": "Mutton & Lamb",
+        "link": "param_link"
+      },
+      {
+        "id": "7",
+        "subcategory_name": "Marinades",
+        "link": "param_link"
+      },
+      {
+        "id": "8",
+        "subcategory_name": "Pork & Other Meats",
+        "link": "param_link"
+      }
+    ]
+  },
+  {
+    "id": "10",
+    "image": "https://img.techpowerup.org/200616/gourmet-world-food.png",
+    "category_name": "Gourmet & World Food",
+    "subcategory": [
+      {
+        "id": "1",
+        "subcategory_name": "All Gourmet & World Food",
+        "link": "param_link"
+      },
+      {
+        "id": "2",
+        "subcategory_name": "Oils & Vinegar",
+        "link": "param_link"
+      },
+      {
+        "id": "3",
+        "subcategory_name": "Dairy & Cheese",
+        "link": "param_link"
+      },
+      {
+        "id": "4",
+        "subcategory_name": "Snacks, Dry Fruits, Nuts",
+        "link": "param_link"
+      },
+      {
+        "id": "5",
+        "subcategory_name": "Pasta, Soup & Noodles",
+        "link": "param_link"
+      },
+      {
+        "id": "6",
+        "subcategory_name": "Sauces, Spreads & Noodles",
+        "link": "param_link"
+      },
+      {
+        "id": "7",
+        "subcategory_name": "Cereals & Breakfast",
+        "link": "param_link"
+      },
+      {
+        "id": "8",
+        "subcategory_name": "Chocolates & Biscuits",
+        "link": "param_link"
+      },
+      {
+        "id": "9",
+        "subcategory_name": "Cooking & Baking Needs",
+        "link": "param_link"
+      },
+      {
+        "id": "10",
+        "subcategory_name": "Drinks & Beverages",
+        "link": "param_link"
+      },
+      {
+        "id": "11",
+        "subcategory_name": "Tinned & Processed Food",
+        "link": "param_link"
+      }
+    ]
+  },
+  {
+    "id": "11",
+    "image": "https://img.techpowerup.org/200616/baby-care.png",
+    "category_name": "Baby Care",
+    "subcategory": [
+      {
+        "id": "1",
+        "subcategory_name": "All Baby Care",
+        "link": "param_link"
+      },
+      {
+        "id": "2",
+        "subcategory_name": "Diapers & Wipes",
+        "link": "param_link"
+      },
+      {
+        "id": "3",
+        "subcategory_name": "Baby Food & Formula",
+        "link": "param_link"
+      },
+      {
+        "id": "4",
+        "subcategory_name": "Baby Bath & Hygiene",
+        "link": "param_link"
+      },
+      {
+        "id": "5",
+        "subcategory_name": "Mothers & Maternity",
+        "link": "param_link"
+      },
+      {
+        "id": "6",
+        "subcategory_name": "Baby Accessories",
+        "link": "param_link"
+      },
+      {
+        "id": "7",
+        "subcategory_name": "Feeding & Nursing",
+        "link": "param_link"
+      }
+    ]
+  }
+]

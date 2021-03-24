@@ -1,0 +1,143 @@
+    "GWALIOR CART"
+
+1. Splash Screen:
+	isAuthenticated -> Home Page, else -> Login Page.
+
+2. Login:
+    isExistingUser -> Login with manual (username, password) or Social (Facebook, Google), else -> SignUp
+    Login := success -> LandingPage, else -> Same Page (Login)
+
+3. SignUp:
+    isNewUser -> SignUp with manual (firstName, lastName, email, ...) or Social (Facebook, Google), else -> Login
+    SignUp := success -> Login Page, else -> Same Page (SignUp)
+
+4. Home Page (Containing 4 screens):
+	(i) Landing Page -> Current Screen
+	(ii) categories Page
+	(iii) Search Page
+	(iv) Cart Page
+
+5. Landing Page:
+	(i) AppBar: with Drawer icon button, Current Location, Search Bar and User icon button.
+	    (a) Drawer: onTap -> Drawer Page
+	    (b) Current Location: onTap -> Choose Current Location
+	    (c) Search Bar: onTap -> Search Screen
+	    (d) User Icon: onTap -> User Detail Page
+	(ii) Banner (Latest Offer with horizontal scroll)
+	     onTap -> Nothing
+	(iii) Categories section (Containing all types of products categories with grid view)
+	      onTap -> SubCategories Page
+	(iV) Best products (with horizontal scroll view)
+	     onTap -> Detail Page
+	     View More: onTap -> Listing of all Best products
+	(V) Latest Products (with horizontal scroll view)
+	    onTap -> Detail Page
+	    View More: onTap -> Listing of all Latest products
+
+6. Categories Page:
+	(i) AppBar: with Drawer icon button and Search Bar
+	    (a) Drawer: onTap -> Drawer Page
+	    (b) Search Bar: onTap -> Search Screen
+	(ii) Expandable Listing page with Categories and Sub-categories name.
+	    (a) Categories: onTap -> Collapse Sub-Category List
+	    (b) Sub-Category: onTap -> Sub-Category Page
+
+7. Search Page:
+	(i) AppBar: with Search Bar
+	    (a) Search Bar: onTap -> Search Screen
+	
+
+8. Cart Page:
+    if isAuthenticated: Open cart Page, else: Continue Shopping Button: onTap -> Landing Page
+	(i) AppBar: with Search icon button
+	    (a) Search Icon: onTap -> Search Screen
+	(ii) Cart List
+	    (a) - (remove button): onTap -> if Quantity == 1 -> Remove particular item from cart list, else if Quantity > 1 -> Decrease no. of item to cart list
+	    (b) + (add button): onTap -> if Quantity == Max -> failed, else -> Increase no. of item to cart list
+	    (c) Item scroll Right to Left: View Remove Item Button: onTap -> Remove particular item from cart list
+	    (d) List: onTap -> Detail Page
+	    (e) Proceed to Checkout Button: onTap -> Checkout Page
+
+
+9. SubCategory Page:
+    (i) AppBar: with Search icon button
+        (a) Search Icon: onTap -> Search Screen
+    (ii) SubCategory with grid view:
+        onTap -> Product Listing Page
+    (iV) Product List (Contain all sub-category items):
+        (a) List: onTap -> Detail Page
+        (b) ADD Button: onTap -> 1 quantity of particular item added to the cart
+
+
+10. Product List Page:
+	(i) AppBar: with Search icon button
+	    (a) Search Icon: onTap -> Search Screen
+    (i) product List:
+        (a) List: onTap -> Detail Page
+        (b) ADD Button: onTap -> 1 quantity of particular item added to the cart
+
+
+11. Search Screen:
+    (i) search Bar (Search Keyword): onTap -> searched Listing Page
+        (a) Searched List Page:
+            (a) List: onTap -> Detail Page
+            (b) ADD Button: onTap -> 1 quantity of particular item added to the cart
+
+
+12. Detail Page:
+    (i) AppBar: with search icon and cart icon (show no. of item present to the cart)
+        (a) Search Icon: onTap -> Search Screen
+        (b) cart icon: onTap -> Cart List
+    (ii) Product details (Brand Name, Item Name, Special Price, Cost price, Saved in %, Ratings and Reviews)
+        (a) Ratings and Reviews: onTap -> Ratings and Reviews Listing Page
+    (iii) Product Image with Favourite Icon Button:
+        (a) Image: onTap -> Image List
+        (b) Favourite Icon: if Orange color: onTap -> Item removed from wish list, else if Grey color: onTap -> Item added to the wish list
+    (iV) Available options:
+        (a) Dynamic fields (Like: Product size drop down, Product color radio button, File upload button, Check box, etc.....)
+    (v) About This product:
+        (a) Item Specifics
+        (b) Item description
+        (c) Material
+    (vi) Add to cart button:
+        onTap -> Item added to the cart (Add to cart button replace to {- quantity +} button)
+            (a) - (remove button): onTap -> if Quantity == 1 -> Remove particular item from cart list and {- quantity +} button replace to Add to cart button, else if Quantity > 1 -> Decrease no. of item to cart list
+            (b) + (add button): onTap -> if Quantity == Max -> failed, else -> Increase no. of item to cart list
+    (vii) Buy Now button:
+        onTap -> if Item already added to the cart: Render to Cart list page, else: Quantity 1 added to the cart and render to cart list page
+
+
+13. Checkout Page:
+    (i) Billing address
+    (ii) Delivery address
+    (iii) Delivery method
+    (iV) Payment method
+    (v) Confirm Order:
+        (a) Order items list
+        (b) Confirm Button: onTap -> PayU biz or RazorPay payment section (payment and order success)
+
+
+14. Drawer Page:
+    (i) User Basic info section (User image, full name and username)
+    (ii) Home button: onTap -> Landing Page
+    (iii) My Account:
+        (a) Profile: onTap -> Profile Page
+        (b) Edit Account: onTap -> Update account form
+        (c) Password: onTap -> Change password form
+        (d) Address Book: onTap -> Address List Page (Add, Edit and Delete)
+        (e) Wish List: onTap -> Wish List page:
+            (a) List: onTap -> Detail Page
+            (b) ADD Button: onTap -> 1 quantity of particular item added to the cart
+            (c) Item scroll Right to Left: View Remove Item Button: onTap -> Remove particular item from wish list
+            (d) search icon button: onTap -> Search Screen
+        (f) Order History (Pending)
+        (g) Refer and Earn (Pending)
+        (h) Reward Points (Pending)
+        (i) Returns (Pending)
+        (j) News Letter (Pending)
+        (k) My wallet (Pending)
+    (iV) Notification (Pending)
+    (iV) Rate Our App (Pending)
+    (iV) Need help? (Pending)
+    (iV) Share (Pending)
+    (iV) LogOut: onTap -> Logout (Destroy session)

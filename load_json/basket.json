@@ -1,0 +1,103 @@
+[
+  {
+    "id": "20",
+    "category_name": "Fruits & Vegetables",
+    "product": [
+      {
+        "id": "42",
+        "name": "Fresho - Kiwi",
+        "image": "https://img.techpowerup.org/200617/kiwi.jpg",
+        "discount": "79.5",
+        "quantity": "400 g - (approx. 4 - 6 pcs)",
+        "real_price": "397.5",
+        "discount_price": "318",
+        "num_of_item": "2",
+        "link": "param_link"
+      },
+      {
+        "id": "47",
+        "name": "Tomato",
+        "image": "https://img.techpowerup.org/200617/tomato.png",
+        "discount": "0",
+        "quantity": "1 kg",
+        "real_price": "50",
+        "discount_price": "47.5",
+        "num_of_item": "1",
+        "link": "param_link"
+      }
+    ]
+  },
+  {
+    "id": "25",
+    "category_name": "Foodgrains, Oil & Masala",
+    "product": [
+      {
+        "id": "36",
+        "name": "White Quinoa",
+        "image": "https://img.techpowerup.org/200617/food-grain.png",
+        "discount": "15",
+        "quantity": "500 g",
+        "real_price": "180",
+        "discount_price": "153",
+        "num_of_item": "1",
+        "link": "param_link"
+      },
+      {
+        "id": "43",
+        "name": "Red Pearl Onion",
+        "image": "https://img.techpowerup.org/200617/masala.png",
+        "discount": "0",
+        "quantity": "340 g",
+        "real_price": "80",
+        "discount_price": "80",
+        "num_of_item": "1",
+        "link": "param_link"
+      },
+      {
+        "id": "34",
+        "name": "King's Oil",
+        "image": "https://img.techpowerup.org/200617/oil.png",
+        "discount": "25.3",
+        "quantity": "5 L",
+        "real_price": "550",
+        "discount_price": "412.5",
+        "num_of_item": "1",
+        "link": "param_link"
+      }
+    ]
+  },
+  {
+    "id": "24",
+    "category_name": "Bakery, Cakes & Dairy",
+    "product": [
+      {
+        "id": "44",
+        "name": "Deli-Style Bread",
+        "image": "https://img.techpowerup.org/200617/bread.png",
+        "discount": "15",
+        "quantity": "300 g",
+        "real_price": "450",
+        "discount_price": "435",
+        "num_of_item": "5",
+        "link": "param_link"
+      }
+    ]
+  },
+  {
+    "id": "34",
+    "category_name": "Beverages",
+    "product": [
+      {
+        "id": "56",
+        "name": "Mango Shake",
+        "image": "https://img.techpowerup.org/200617/beverage806.png",
+        "discount": "0",
+        "quantity": "1 L",
+        "real_price": "120",
+        "discount_price": "120",
+        "num_of_item": "1",
+        "link": "param_link"
+      }
+    ]
+  }
+]

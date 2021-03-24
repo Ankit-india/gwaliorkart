@@ -1,0 +1,21 @@
+lib/screens/home.dart and lib/screens/location.dart
+1. The getter 'forceAndroidLocationManager' isn't defined for the type 'Geolocator'.
+2. The method 'placemarkFromCoordinates' isn't defined for the type 'Geolocator'.
+3. Undefined class 'Placemark'.
+
+lib/screens/checkout_page.dart
+1. The named parameter 'attribute' isn't defined.
+2. The parameter 'name' is required.
+3. autovalidate' is deprecated and shouldn't be used.
+
+lib/screens/product_details.dart
+1. The named parameter 'validators' isn't defined.
+2. The named parameter 'readOnly' isn't defined.
+
+lib/screens/backup_file.dart
+1. The method 'requiredTrue' isn't defined for the type 'FormBuilderValidators'.
+2. The method 'FormBuilderRate' isn't defined for the type '_CheckBoxListState'.
+3. The method 'FormBuilderCheckboxList' isn't defined for the type '_CheckBoxListState'.
+
+lib/widgets/locator.dart
+1. The class 'GetIt' doesn't have a default constructor.

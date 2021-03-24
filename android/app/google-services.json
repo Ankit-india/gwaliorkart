@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "419182451707",
+    "firebase_url": "https://karnfire-865db.firebaseio.com",
+    "project_id": "karnfire-865db",
+    "storage_bucket": "karnfire-865db.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:419182451707:android:d9e5a840afacf4ab90895e",
+        "android_client_info": {
+          "package_name": "com.example.gwaliorkart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "419182451707-e90p4jhohm05s1iji6i3afv6jiohkqkp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.gwaliorkart",
+            "certificate_hash": "6a97b414861cd3fe0836fa4dca36880339d6f49a"
+          }
+        },
+        {
+          "client_id": "419182451707-r0jtkgbgc1rhqnfgkgt326kjpidrb3i2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUKB4hLX_1jqmJosZRmB8kI3xmKs9GhdM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "419182451707-r0jtkgbgc1rhqnfgkgt326kjpidrb3i2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

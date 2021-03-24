@@ -1,0 +1,182 @@
+https://servitudeindia.com/gwaliorkart/api/custlogin
+param : email, password  request post
+
+https://servitudeindia.com/gwaliorkart/api/custregister
+param : firstname, lastname, email, telephone, password, confirm, agree (0,1), newsletter (0,1)  request post
+
+https://servitudeindia.com/gwaliorkart/api/registersocial
+param : email, firstname, lastname request post
+
+https://servitudeindia.com/gwaliorkart/api/custforgotten
+param : email  request post
+
+https://servitudeindia.com/gwaliorkart/api/custresetpassword
+param : code, password, confirm  request post
+
+
+https://servitudeindia.com/gwaliorkart/api/gethomecontent
+request -- get
+
+https://servitudeindia.com/gwaliorkart/api/search/(search data)
+request -- get
+
+https://servitudeindia.com/gwaliorkart/api/categorylist/manincategory_subcategory
+request -- get  
+
+https://servitudeindia.com/gwaliorkart/api/productdetails/(product_id)/(customer_id)
+request -- get   if don't have customer_id add (-)
+
+https://servitudeindia.com/gwaliorkart/api/change_price
+param : product_id, option request post
+
+https://servitudeindia.com/gwaliorkart/api/addwishlist
+param : product_id, customer_id  request post
+
+https://servitudeindia.com/gwaliorkart/api/getwishlist/customer_id
+param : customer_id  request get
+
+https://servitudeindia.com/gwaliorkart/api/removewishlist/product_id/customer_id
+param : product_id,customer_id  request get
+
+https://servitudeindia.com/gwaliorkart/api/uploadfiles
+param : file request post
+
+https://servitudeindia.com/gwaliorkart/api/addtocart
+param : product_id, customer_id, quantity, option, vouchers, coupon, reward  request post
+
+https://servitudeindia.com/gwaliorkart/api/editcart
+param : cart_id, quantity  request post
+
+https://servitudeindia.com/gwaliorkart/api/getcartlist/customer_id/vouchers/coupon/reward
+param : customer_id, vouchers(If no used '-'), coupon(If no used '-'), reward (If no used '-')  request get
+
+https://servitudeindia.com/gwaliorkart/api/removecart
+param : cart_id, customer_id  request post
+
+https://servitudeindia.com/gwaliorkart/api/applycoupon
+param : coupon, customer_id  request post
+
+https://servitudeindia.com/gwaliorkart/api/applyvoucher
+param : voucher, customer_id  request post
+
+https://servitudeindia.com/gwaliorkart/api/applyreward
+param : reward, customer_id  request post
+
+https://servitudeindia.com/gwaliorkart/api/getStateList/country_id
+param : country_id  request get
+
+https://servitudeindia.com/gwaliorkart/api/getBillingAddress/customer_id
+param : customer_id  request get
+
+https://servitudeindia.com/gwaliorkart/api/savenewBillingAddress
+param : customer_id, firstname, lastname, email, address_1, address_2, country_id, zone_id, city, postcode  request post
+
+https://servitudeindia.com/gwaliorkart/api/applyBillingAddress
+param : customer_id, address_id request post
+
+https://servitudeindia.com/gwaliorkart/api/getShippingAddress/customer_id
+param : customer_id  request get
+
+https://servitudeindia.com/gwaliorkart/api/savenewShippingAddress
+param : customer_id, firstname, lastname, email, address_1, address_2, country_id, zone_id, city, postcode  request post
+
+https://servitudeindia.com/gwaliorkart/api/applyShippingAddress
+param : customer_id, address_id request post
+
+https://servitudeindia.com/gwaliorkart/api/getShippingMethod
+param : address_id (shipping), customer_id  request get
+
+https://servitudeindia.com/gwaliorkart/api/applyShippingMethod
+param : customer_id, code (shiiping method), address_id (shipping), comment request post
+
+https://servitudeindia.com/gwaliorkart/api/getPaymentMethod
+param : address_id (billing), customer_id  request get
+
+https://servitudeindia.com/gwaliorkart/api/applyPaymentMethod
+param : customer_id, payment_method, comment request post
+
+https://servitudeindia.com/gwaliorkart/api/saveorder                /// Before Payment
+param: customer_id, billing_address_id(billing), shipping_address_id(shipping), shipping_method (shiiping method code), payment_method, vouchers, coupon, reward, prod_opt(0=>Full,1=>partial), ewallet(0=>not use wallet,1=> use wallet), comment, request post
+
+https://servitudeindia.com/gwaliorkart/api/updatePaymentstatus   // for payu
+param : customer_id, order_id, key, txnid, amount, productinfo, firstname, email, udf5, status, hash, mihpayid, unmappedstatus (if failure) request post
+
+
+1) http://localhost/gwaliorkart/api/getcustacc/:customer_id
+   Req: Customer ID
+
+2) http://localhost/gwaliorkart/api/geteditprofile/:customer_id
+   Req: Customer ID
+
+3) http://localhost/gwaliorkart/api/getCustomerAddressList/:customer_id
+   Req: Customer ID
+
+4) http://localhost/gwaliorkart/api/getCustomerAddAddressForm/
+   :customer_id/:address_id
+   Req: Customer ID
+	Address ID -> 0 for adding new address
+		   -> greater than 0 for editing existing address
+
+5) http://localhost/gwaliorkart/api/deleteCustomerAddress/
+   :customer_id/:address_id
+   Req: Customer ID 
+	Address ID : the id of the address to delete
+
+6) http://localhost/gwaliorkart/api/getinvitelist/:customer_id/:page
+   Req: Customer ID
+	Page NO.
+
+7) http://localhost/gwaliorkart/api/getrewardlist/:customer_id/:page
+   Req: Customer ID
+	Page NO.
+
+8) http://localhost/gwaliorkart/api/getorder/:customer_id/:page
+   Req: Customer ID
+	Page NO
+
+9)http://localhost/gwaliorkart/api/getorderinfo/:customer_id/:order_id
+   Req: customer_id
+	order_id
+
+10) http://localhost/gwaliorkart/api/getreturnadd/:customer_id/:order_id/:product_id
+   Req: customer_id
+	order_id
+	product_id
+	
+1) http://localhost/gwaliorkart/api/custeditprofile
+   pram:   customer_id
+		firstname
+		lastname
+		email
+		preemail: To check if new email is already registered.
+		telephone
+
+2) http://localhost/gwaliorkart/api/changepassacc
+   pram:   customer_id
+		email
+		password
+		confirm
+
+3) http://localhost/gwaliorkart/api/saveCustomerAddressForm
+   pram:   customer_id
+		firstname
+		lastname
+		company
+		telephone
+		email
+		address_1
+		address_2
+		zone_id
+		city
+		postcode
+		default -> if default address set 1 otherwise blank
+
+4) http://localhost/gwaliorkart/api/sendinvitation
+   pram:   customer_id
+		freind_name
+		freind_email
+		freind_mobile
+
+
+
+
