@@ -3358,7 +3358,7 @@ class _ProductDetailsState extends State<ProductDetails>
       if (AuthUtils.authToken == null) {
         Constants.showLongToastBuilder('Please Login to add to wish list');
         MaterialPageRoute authRoute =
-        MaterialPageRoute(builder: (context) => AuthLogin());
+            MaterialPageRoute(builder: (context) => AuthLogin());
         Navigator.push(context, authRoute);
       } else {
         WishListData _listParam =
@@ -3751,7 +3751,7 @@ class _ProductDetailsState extends State<ProductDetails>
                   ),
             FormBuilderRadioGroup(
               initialValue: _radioInput,
-              attribute: "best_language",
+              name: "best_language",
               activeColor: Constants.myGreen,
               options: WidgetPage.radioButton(_radioData),
               onChanged: (_newRadioVal) async {
@@ -3778,14 +3778,12 @@ class _ProductDetailsState extends State<ProductDetails>
                   }
                 });
               },
-              validators: [
-                _radioData.required == '1'
-                    ? FormBuilderValidators.required(
-                        errorText: 'Please select an ' +
-                            _radioData.name.toLowerCase() +
-                            '!')
-                    : null,
-              ],
+              validator: _radioData.required == '1'
+                  ? FormBuilderValidators.required(context,
+                      errorText: 'Please select an ' +
+                          _radioData.name.toLowerCase() +
+                          '!')
+                  : null,
             ),
             Constants.height(20.0),
           ],
@@ -3819,8 +3817,8 @@ class _ProductDetailsState extends State<ProductDetails>
                     style: _ddNameStyle,
                   ),
             FormBuilderCheckboxGroup(
-              readOnly: true,
-              attribute: "Accessories",
+              enabled: true,
+              name: "Accessories",
               initialValue: _checkInput,
               activeColor: Constants.myGreen,
               options: WidgetPage.checkboxGroup(_checkboxData),
@@ -3845,14 +3843,13 @@ class _ProductDetailsState extends State<ProductDetails>
                   }
                 });
               },
-              validators: [
-                _checkboxData.required == '1'
-                    ? FormBuilderValidators.required(
-                        errorText: 'Please select an ' +
-                            _checkboxData.name.toLowerCase() +
-                            '!')
-                    : null,
-              ],
+              //ToDo: Apply Validator
+              // validator: _checkboxData.required == '1'
+              //     ? FormBuilderValidators.required(context,
+              //         errorText: 'Please select an ' +
+              //             _checkboxData.name.toLowerCase() +
+              //             '!')
+              //     : null,
             ),
             Constants.height(20.0),
           ],
@@ -4405,16 +4402,15 @@ class _ProductDetailsState extends State<ProductDetails>
     return InkWell(
       onTap: _product.stock == 'In Stock'
           ? () async {
-        if (AuthUtils.authToken != null &&
-            AuthUtils.authToken != '') {
-          _buyNowAddToCart(context);
-        }else{
-          Constants.showLongToastBuilder('Please Login to buy now');
-          MaterialPageRoute authRoute =
-          MaterialPageRoute(builder: (context) => AuthLogin());
-          Navigator.push(context, authRoute);
-        }
-      }
+              if (AuthUtils.authToken != null && AuthUtils.authToken != '') {
+                _buyNowAddToCart(context);
+              } else {
+                Constants.showLongToastBuilder('Please Login to buy now');
+                MaterialPageRoute authRoute =
+                    MaterialPageRoute(builder: (context) => AuthLogin());
+                Navigator.push(context, authRoute);
+              }
+            }
           : () {},
       child: Container(
         padding: EdgeInsets.symmetric(vertical: 13.0),
@@ -4430,7 +4426,9 @@ class _ProductDetailsState extends State<ProductDetails>
             Constants.width(5.0),
             Text(
               _product != null
-                  ? _product.stock == 'In Stock' ? 'BUY NOW' : 'OUT OF STOCK'
+                  ? _product.stock == 'In Stock'
+                      ? 'BUY NOW'
+                      : 'OUT OF STOCK'
                   : "BUY NOW",
               style: TextStyle(
                 fontSize: 12.0,
@@ -4449,13 +4447,12 @@ class _ProductDetailsState extends State<ProductDetails>
     if (_isCartAdded == false) {
       _cartWidget = InkWell(
         onTap: () async {
-          if (AuthUtils.authToken != null &&
-              AuthUtils.authToken != '') {
+          if (AuthUtils.authToken != null && AuthUtils.authToken != '') {
             _firstTimeAddToCart(context);
-          }else{
+          } else {
             Constants.showLongToastBuilder('Please Login to add to cart');
             MaterialPageRoute authRoute =
-            MaterialPageRoute(builder: (context) => AuthLogin());
+                MaterialPageRoute(builder: (context) => AuthLogin());
             Navigator.push(context, authRoute);
           }
         },

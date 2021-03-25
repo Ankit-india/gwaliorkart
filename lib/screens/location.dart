@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:geocoding/geocoding.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:gwaliorkart/utils/constants.dart';
 import 'package:gwaliorkart/utils/storage_utils.dart';
@@ -9,7 +10,7 @@ class Location extends StatefulWidget {
 }
 
 class _LocationState extends State<Location> {
-  final Geolocator geolocator = Geolocator()..forceAndroidLocationManager;
+  // final Geolocator geolocator = Geolocator()..forceAndroidLocationManager;
   Position _currentPosition;
   String _currentAddress = '';
 
@@ -54,8 +55,7 @@ class _LocationState extends State<Location> {
   }
 
   _getCurrentLocation() {
-    Geolocator
-        .getCurrentPosition(desiredAccuracy: LocationAccuracy.best)
+    Geolocator.getCurrentPosition(desiredAccuracy: LocationAccuracy.best)
         .then((Position position) {
       setState(() {
         _currentPosition = position;
@@ -69,7 +69,7 @@ class _LocationState extends State<Location> {
 
   _getAddressFromLatLng() async {
     try {
-      List<Placemark> p = await geolocator.placemarkFromCoordinates(
+      List<Placemark> p = await placemarkFromCoordinates(
           _currentPosition.latitude, _currentPosition.longitude);
 
       Placemark _place = p[0];

@@ -184,19 +184,19 @@ class _CheckBoxListState extends State<CheckBoxList> {
                   'date': DateTime.now(),
                   'accept_terms': false,
                 },
-                autovalidate: true,
+                autovalidateMode: AutovalidateMode.always,
                 child: Column(
                   children: <Widget>[
                     FormBuilderDateTimePicker(
-                      attribute: "date",
+                      name: "date",
                       inputType: InputType.date,
                       format: DateFormat("yyyy-MM-dd"),
                       decoration:
                           InputDecoration(labelText: "Appointment Time"),
                     ),
                     FormBuilderSlider(
-                      attribute: "slider",
-                      validators: [FormBuilderValidators.min(6)],
+                      name: "slider",
+                      validator: FormBuilderValidators.min(context, 6),
                       min: 0.0,
                       max: 10.0,
                       initialValue: 1.0,
@@ -205,66 +205,66 @@ class _CheckBoxListState extends State<CheckBoxList> {
                           InputDecoration(labelText: "Number of things"),
                     ),
                     FormBuilderCheckbox(
-                      attribute: 'accept_terms',
-                      label: Text(
-                          "I have read and agree to the terms and conditions"),
-                      validators: [
-                        FormBuilderValidators.requiredTrue(
-                          errorText:
-                              "You must accept terms and conditions to continue",
-                        ),
-                      ],
+                      name: 'accept_terms',
+                      decoration: InputDecoration(
+                        labelText:
+                            "I have read and agree to the terms and conditions",
+                      ),
+                      validator: FormBuilderValidators.required(context),
+                      title: Text('Title'),
                     ),
                     FormBuilderDropdown(
-                      attribute: "gender",
+                      name: "gender",
                       decoration: InputDecoration(labelText: "Gender"),
                       // initialValue: 'Male',
                       hint: Text('Select Gender'),
-                      validators: [FormBuilderValidators.required()],
+                      validator: FormBuilderValidators.required(context),
                       items: ['Male', 'Female', 'Other']
                           .map((gender) => DropdownMenuItem(
                               value: gender, child: Text("$gender")))
                           .toList(),
                     ),
                     FormBuilderTextField(
-                      attribute: "age",
+                      name: "age",
                       decoration: InputDecoration(labelText: "Age"),
-                      validators: [
-                        FormBuilderValidators.numeric(),
-                        FormBuilderValidators.max(70),
-                      ],
+                      validator: FormBuilderValidators.compose([
+                        FormBuilderValidators.numeric(context),
+                        FormBuilderValidators.max(context, 70),
+                      ]),
                     ),
                     FormBuilderSegmentedControl(
                       decoration:
                           InputDecoration(labelText: "Movie Rating (Archer)"),
-                      attribute: "movie_rating",
+                      name: "movie_rating",
                       options: List.generate(5, (i) => i + 1)
                           .map(
                               (number) => FormBuilderFieldOption(value: number))
                           .toList(),
                     ),
                     FormBuilderSwitch(
-                      label: Text('I Accept the terms and conditions'),
-                      attribute: "accept_terms_switch",
+                      decoration: InputDecoration(
+                          labelText: 'I Accept the terms and conditions'),
+                      name: "accept_terms_switch",
                       initialValue: true,
+                      title: Text('Title'),
                     ),
                     FormBuilderTouchSpin(
                       decoration: InputDecoration(labelText: "Stepper"),
-                      attribute: "stepper",
+                      name: "stepper",
                       initialValue: 10,
                       step: 1,
                     ),
-                    FormBuilderRate(
+                    FormBuilderRating(
                       decoration: InputDecoration(labelText: "Rate this form"),
-                      attribute: "rate",
+                      name: "rate",
                       iconSize: 32.0,
                       initialValue: 1,
                       max: 5,
                     ),
-                    FormBuilderCheckboxList(
+                    FormBuilderCheckboxGroup(
                       decoration: InputDecoration(
                           labelText: "The language of my people"),
-                      attribute: "languages",
+                      name: "languages",
                       initialValue: options,
                       options: [
                         FormBuilderFieldOption(value: "Dart"),
@@ -283,7 +283,7 @@ class _CheckBoxListState extends State<CheckBoxList> {
                     FormBuilderCheckboxGroup(
                       decoration: InputDecoration(
                           labelText: "The language of my coding"),
-                      attribute: "tempered",
+                      name: "tempered",
                       initialValue: _optionVal,
                       activeColor: Constants.myGreen,
                       options: [
@@ -301,7 +301,7 @@ class _CheckBoxListState extends State<CheckBoxList> {
                       },
                     ),
                     FormBuilderChoiceChip(
-                      attribute: "favorite_ice_cream",
+                      name: "favorite_ice_cream",
                       options: [
                         FormBuilderFieldOption(
                             child: Text("Vanilla"), value: "vanilla"),
@@ -314,7 +314,7 @@ class _CheckBoxListState extends State<CheckBoxList> {
                       ],
                     ),
                     FormBuilderFilterChip(
-                      attribute: "pets",
+                      name: "pets",
                       options: [
                         FormBuilderFieldOption(
                             child: Text("Cats"), value: "cats"),
@@ -328,7 +328,7 @@ class _CheckBoxListState extends State<CheckBoxList> {
                     ),
                     FormBuilderSignaturePad(
                       decoration: InputDecoration(labelText: "Signature"),
-                      attribute: "signature",
+                      name: "signature",
                       height: 100,
                     ),
                   ],

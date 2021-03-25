@@ -19,3 +19,6 @@ lib/screens/backup_file.dart
 
 lib/widgets/locator.dart
 1. The class 'GetIt' doesn't have a default constructor.
+
+25/03/2021
+Fixed All Above errors

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:geocoding/geocoding.dart';
 import 'package:gwaliorkart/models/cart_data.dart';
 import 'package:gwaliorkart/screens/auth_login.dart';
 import 'package:gwaliorkart/screens/basket.dart';
@@ -30,7 +31,7 @@ class _HomeState extends State<Home> {
   Basket _basketPage;
 
   List<Widget> pages;
-  int _selectedIndex = 0,_quantity, _itemInCart, _productCartId;
+  int _selectedIndex = 0, _quantity, _itemInCart, _productCartId;
   Size _deviceSize;
   Widget _currentPage;
 
@@ -38,13 +39,9 @@ class _HomeState extends State<Home> {
   bool _showAppbar = true, isScrollingDown = false, _show = true;
   DateTime currentBackPressTime;
   String qrCode = "";
-  //TODO Editing here
-  final Geolocator _geoLocator = Geolocator()..forceAndroidLocationManager;
+  // final Geolocator _geoLocator = Geolocator()..forceAndroidLocationManager;
   Position _currentPosition;
-  String _currentAddress = '',_customerId,
-      _vouchers,
-      _coupon,
-      _reward;
+  String _currentAddress = '', _customerId, _vouchers, _coupon, _reward;
 
   @override
   void initState() {
@@ -65,10 +62,10 @@ class _HomeState extends State<Home> {
 
   Future<dynamic> _getCartListData() async {
     await CartUtils.getCartList(
-        _customerId != null && _customerId != "" ? _customerId : "-",
-        _vouchers != null && _vouchers != "" ? _vouchers : "-",
-        _coupon != null && _coupon != "" ? _coupon : "-",
-        _reward != null && _reward != "" ? _reward : "-")
+            _customerId != null && _customerId != "" ? _customerId : "-",
+            _vouchers != null && _vouchers != "" ? _vouchers : "-",
+            _coupon != null && _coupon != "" ? _coupon : "-",
+            _reward != null && _reward != "" ? _reward : "-")
         .then((dynamic _response) async {
       if (_response != null) {
         if (_response.containsKey('text_count')) {
@@ -81,7 +78,6 @@ class _HomeState extends State<Home> {
       print("\ngetCartData catchError:=> $_onError\n");
     });
   }
-
 
   @override
   void dispose() {
@@ -123,8 +119,7 @@ class _HomeState extends State<Home> {
   }
 
   Future<void> _getCurrentLocation() async {
-    await Geolocator
-        .getCurrentPosition(desiredAccuracy: LocationAccuracy.best)
+    await Geolocator.getCurrentPosition(desiredAccuracy: LocationAccuracy.best)
         .then((Position _position) {
       setState(() {
         _currentPosition = _position;
@@ -138,8 +133,7 @@ class _HomeState extends State<Home> {
 
   Future<void> _getAddressFromLatLng() async {
     try {
-      await _geoLocator
-          .placemarkFromCoordinates(
+      await placemarkFromCoordinates(
               _currentPosition.latitude, _currentPosition.longitude)
           .then((List<Placemark> p) async {
         Placemark _place = p[0];

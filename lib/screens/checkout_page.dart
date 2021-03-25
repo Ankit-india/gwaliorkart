@@ -1303,7 +1303,7 @@
 //     return FormBuilderRadioGroup(
 //       decoration: _radioDecoration,
 //       initialValue: _paymentMethodCode,
-//       attribute: "payment_method",
+//       name: "payment_method",
 //       activeColor: Constants.myGreen,
 //       options: WidgetPage.paymentMethodRadioGroup(_paymentMethods),
 //       onChanged: (dynamic _newRadioVal) {
@@ -1333,7 +1333,7 @@
 //     return FormBuilderRadioGroup(
 //       decoration: _radioDecoration,
 //       initialValue: _prodOpt,
-//       attribute: "payment_type",
+//       name: "payment_type",
 //       activeColor: Constants.myGreen,
 //       options: WidgetPage.paymentTypeRadioGroup(_paymentTypes),
 //       onChanged: (_newTypeVal) {
@@ -1535,7 +1535,7 @@
 //             FormBuilderRadioGroup(
 //               decoration: _radioGroupDecoration,
 //               initialValue: this._initialValue,
-//               attribute: "selected_address",
+//               name: "selected_address",
 //               activeColor: Constants.myGreen,
 //               options: WidgetPage.addressTypeOptions(_addresses),
 //               onChanged: (dynamic _newRadioVal) {
@@ -1567,7 +1567,7 @@
 //             FormBuilderRadioGroup(
 //               decoration: _radioGroupDecoration,
 //               initialValue: this._initialValue,
-//               attribute: "selected_address",
+//               name: "selected_address",
 //               activeColor: Constants.myGreen,
 //               options: WidgetPage.addressTypeOptions(_addresses),
 //               onChanged: (dynamic _newRadioVal) {
@@ -2987,7 +2987,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
     return FormBuilderRadioGroup(
       decoration: _radioDecoration,
       initialValue: _paymentMethodCode,
-      attribute: "payment_method",
+      name: "payment_method",
       activeColor: Constants.myGreen,
       options: WidgetPage.paymentMethodRadioGroup(_paymentMethods),
       onChanged: (dynamic _newRadioVal) {
@@ -3027,7 +3027,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
     return FormBuilderRadioGroup(
       decoration: _radioDecoration,
       initialValue: _prodOpt,
-      attribute: "payment_type",
+      name: "payment_type",
       activeColor: Constants.myGreen,
       options: WidgetPage.paymentTypeRadioGroup(_paymentTypes),
       onChanged: (_newTypeVal) {
@@ -3323,7 +3323,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
             FormBuilderRadioGroup(
               decoration: _radioGroupDecoration,
               initialValue: this._initialValue,
-              attribute: "selected_address",
+              name: "selected_address",
               activeColor: Constants.myGreen,
               options: WidgetPage.addressTypeOptions(_addresses),
               onChanged: (dynamic _newRadioVal) {
@@ -3355,7 +3355,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
             FormBuilderRadioGroup(
               decoration: _radioGroupDecoration,
               initialValue: this._initialValue,
-              attribute: "selected_address",
+              name: "selected_address",
               activeColor: Constants.myGreen,
               options: WidgetPage.addressTypeOptions(_addresses),
               onChanged: (dynamic _newRadioVal) {
